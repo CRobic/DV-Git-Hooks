@@ -1,0 +1,45 @@
+# --- Base setup ---
+# Force Git à normaliser les fins de ligne en LF dans le repo
+* text=auto eol=lf
+
+# --- Documentation ---
+*.md      text eol=lf
+*.txt     text eol=lf
+
+# --- Code source ---
+*.js      text eol=lf
+*.ts      text eol=lf
+*.jsx     text eol=lf
+*.tsx     text eol=lf
+*.json    text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.css     text eol=lf
+*.scss    text eol=lf
+*.html    text eol=lf
+
+# --- Scripts ---
+*.sh      text eol=lf
+*.bash    text eol=lf
+*.bat     text eol=crlf
+*.ps1     text eol=crlf
+
+# --- Configuration ---
+*.env     text eol=lf
+*.ini     text eol=lf
+
+# --- Binary files (no conversion) ---
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.pdf     binary
+*.zip     binary
+*.gz      binary
+
+# --- Special cases ---
+# Lock files doivent rester exacts
+package-lock.json text eol=lf
+yarn.lock         text eol=lf
+pnpm-lock.yaml    text eol=lf
